@@ -23,22 +23,26 @@ A production-ready RESTful API built with Node.js and Express, featuring authent
 ## 🛠️ Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Diptodas123/kubernetes-demo-api.git
 cd devops-demo-api
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env
 ```
 
 Edit `.env` with your configuration:
+
 ```env
 # Server
 PORT=3000
@@ -59,6 +63,7 @@ ARCJET_KEY=your_arcjet_key
 ```
 
 4. Run database migrations:
+
 ```bash
 npm run db:generate
 npm run db:migrate
@@ -185,17 +190,20 @@ Coverage reports are generated in the `coverage/` directory.
 ## 🔧 Technologies Used
 
 ### Core
+
 - **Express.js** - Web framework
 - **PostgreSQL** - Database
 - **Drizzle ORM** - Type-safe database operations
 
 ### Security
+
 - **Arcjet** - Security and rate limiting
 - **Helmet** - HTTP security headers
 - **bcrypt** - Password hashing
 - **jsonwebtoken** - JWT authentication
 
 ### Development
+
 - **Jest** - Testing framework
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
@@ -205,11 +213,13 @@ Coverage reports are generated in the `coverage/` directory.
 ## 🐳 Docker Deployment
 
 ### Development
+
 ```bash
 docker-compose -f docker-compose.dev.yml up
 ```
 
 ### Production
+
 ```bash
 docker-compose -f docker-compose.prod.yml up -d
 ```
