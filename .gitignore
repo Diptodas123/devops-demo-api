@@ -1,6 +1,7 @@
 node_modules/
 dist/
-.env.*
+.env.production
+.env.development
 logs/
 *.log.neon_local
 .neon_local
